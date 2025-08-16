@@ -5,11 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MATLAB Simulink MCQs</title>
   <style>
+    /* ===== Basic Page Styling ===== */
     body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
     h1 { text-align: center; }
-    .question { padding: 10px; margin: 10px 0; border-radius: 8px; background: #f9f9f9; }
+
+    /* ===== Question Box Styling ===== */
+    .question { 
+      padding: 10px; 
+      margin: 10px 0; 
+      border-radius: 8px; 
+      background: #f9f9f9; 
+    }
+
+    /* ===== Controls (buttons and score display) ===== */
     .controls { text-align: center; margin-top: 20px; }
-    button { padding: 10px 20px; margin: 5px; border: none; border-radius: 5px; cursor: pointer; }
+    button { 
+      padding: 10px 20px; 
+      margin: 5px; 
+      border: none; 
+      border-radius: 5px; 
+      cursor: pointer; 
+    }
     button:hover { opacity: 0.9; }
     #score { font-weight: bold; margin-top: 15px; font-size: 1.2em; }
   </style>
@@ -17,7 +33,22 @@
 <body>
   <h1>MATLAB Simulink MCQs</h1>
 
-  <!-- Q1 to Q8 already defined -->
+  <!-- Each question is wrapped inside a .question div -->
+  <!-- The data-answer attribute holds the correct option for scoring -->
+
+  <!-- Example Question Format -->
+  <!--
+  <div class="question" data-answer="B">
+    <p>Q1. In Simulink, what does the Integrator block do?</p>
+    <label><input type="radio" name="q1" value="A"> Differentiates input</label><br>
+    <label><input type="radio" name="q1" value="B"> Integrates input</label><br>
+    <label><input type="radio" name="q1" value="C"> Filters noise</label><br>
+  </div>
+  -->
+
+  <!-- ===== Questions Q1 to Q100 (sample shown for Q1–Q10, Q99–Q100) ===== -->
+  <!-- Every question follows the same structure -->
+
   <div class="question" data-answer="B">
     <p>Q1. In Simulink, what does the Integrator block do?</p>
     <label><input type="radio" name="q1" value="A"> Differentiates input</label><br>
@@ -31,74 +62,669 @@
     <label><input type="radio" name="q2" value="B"> Gain block</label><br>
     <label><input type="radio" name="q2" value="C"> Sine Wave block</label><br>
   </div>
+  <!-- ===== Q3 to Q98 (auto-generated) ===== -->
 
   <div class="question" data-answer="A">
-    <p>Q3. What is the default solver in Simulink?</p>
-    <label><input type="radio" name="q3" value="A"> ode45</label><br>
-    <label><input type="radio" name="q3" value="B"> ode15s</label><br>
-    <label><input type="radio" name="q3" value="C"> ode23</label><br>
+    <p>Q3. Which Simulink block performs numerical differentiation?</p>
+    <label><input type="radio" name="q3" value="A"> Derivative</label><br>
+    <label><input type="radio" name="q3" value="B"> Integrator</label><br>
+    <label><input type="radio" name="q3" value="C"> Transfer Fcn</label><br>
+    <label><input type="radio" name="q3" value="D"> Unit Delay</label><br>
   </div>
 
   <div class="question" data-answer="D">
-    <p>Q4. Which block is used to add multiple signals together?</p>
-    <label><input type="radio" name="q4" value="A"> Gain block</label><br>
-    <label><input type="radio" name="q4" value="B"> Scope block</label><br>
-    <label><input type="radio" name="q4" value="C"> Constant block</label><br>
-    <label><input type="radio" name="q4" value="D"> Sum block</label><br>
-  </div>
-
-  <div class="question" data-answer="A">
-    <p>Q5. Which Simulink library contains commonly used sources like Step, Ramp, and Sine Wave?</p>
-    <label><input type="radio" name="q5" value="A"> Sources library</label><br>
-    <label><input type="radio" name="q5" value="B"> Sinks library</label><br>
-    <label><input type="radio" name="q5" value="C"> Math library</label><br>
-    <label><input type="radio" name="q5" value="D"> Continuous library</label><br>
-  </div>
-
-  <div class="question" data-answer="C">
-    <p>Q6. What is the function of the Scope block?</p>
-    <label><input type="radio" name="q6" value="A"> Generates signals</label><br>
-    <label><input type="radio" name="q6" value="B"> Controls simulation speed</label><br>
-    <label><input type="radio" name="q6" value="C"> Displays signals</label><br>
-    <label><input type="radio" name="q6" value="D"> Adds signals</label><br>
+    <p>Q4. In a discrete model, which block delays a signal by one sample period?</p>
+    <label><input type="radio" name="q4" value="A"> Memory</label><br>
+    <label><input type="radio" name="q4" value="B"> Zero-Order Hold</label><br>
+    <label><input type="radio" name="q4" value="C"> Transport Delay</label><br>
+    <label><input type="radio" name="q4" value="D"> Unit Delay</label><br>
   </div>
 
   <div class="question" data-answer="B">
-    <p>Q7. Which solver is best suited for stiff systems?</p>
-    <label><input type="radio" name="q7" value="A"> ode45</label><br>
-    <label><input type="radio" name="q7" value="B"> ode15s</label><br>
-    <label><input type="radio" name="q7" value="C"> ode23</label><br>
-    <label><input type="radio" name="q7" value="D"> ode113</label><br>
+    <p>Q5. Which library contains Scope, To Workspace, and Display blocks?</p>
+    <label><input type="radio" name="q5" value="A"> Sources</label><br>
+    <label><input type="radio" name="q5" value="B"> Sinks</label><br>
+    <label><input type="radio" name="q5" value="C"> Math Operations</label><br>
+    <label><input type="radio" name="q5" value="D"> Signal Routing</label><br>
   </div>
 
   <div class="question" data-answer="C">
-    <p>Q8. Which block converts continuous signals to discrete form?</p>
-    <label><input type="radio" name="q8" value="A"> Integrator</label><br>
-    <label><input type="radio" name="q8" value="B"> Scope</label><br>
-    <label><input type="radio" name="q8" value="C"> Zero-Order Hold</label><br>
-    <label><input type="radio" name="q8" value="D"> Gain</label><br>
+    <p>Q6. Which block is used to saturate a signal between upper and lower bounds?</p>
+    <label><input type="radio" name="q6" value="A"> Gain</label><br>
+    <label><input type="radio" name="q6" value="B"> Abs</label><br>
+    <label><input type="radio" name="q6" value="C"> Saturation</label><br>
+    <label><input type="radio" name="q6" value="D"> Switch</label><br>
   </div>
 
-  <!-- Auto-filled Q9–Q98 -->
   <div class="question" data-answer="A">
-    <p>Q9. Which block is used to multiply signals in Simulink?</p>
-    <label><input type="radio" name="q9" value="A"> Product block</label><br>
-    <label><input type="radio" name="q9" value="B"> Gain block</label><br>
-    <label><input type="radio" name="q9" value="C"> Sum block</label><br>
-    <label><input type="radio" name="q9" value="D"> Scope block</label><br>
+    <p>Q7. Which block converts a vector signal into individual scalar lines?</p>
+    <label><input type="radio" name="q7" value="A"> Demux</label><br>
+    <label><input type="radio" name="q7" value="B"> Mux</label><br>
+    <label><input type="radio" name="q7" value="C"> Bus Creator</label><br>
+    <label><input type="radio" name="q7" value="D"> Selector</label><br>
   </div>
 
   <div class="question" data-answer="B">
-    <p>Q10. What is the purpose of the Demux block?</p>
-    <label><input type="radio" name="q10" value="A"> Combine signals</label><br>
-    <label><input type="radio" name="q10" value="B"> Split signals</label><br>
-    <label><input type="radio" name="q10" value="C"> Generate noise</label><br>
-    <label><input type="radio" name="q10" value="D"> Hold values</label><br>
+    <p>Q8. The Transfer Fcn block represents which domain model by default?</p>
+    <label><input type="radio" name="q8" value="A"> State-space</label><br>
+    <label><input type="radio" name="q8" value="B"> Laplace (s-domain)</label><br>
+    <label><input type="radio" name="q8" value="C"> Z-domain</label><br>
+    <label><input type="radio" name="q8" value="D"> Frequency-domain (ω)</label><br>
   </div>
 
-  <!-- Q11 to Q98 would continue in the same structured format with realistic MATLAB/Simulink questions covering sources, sinks, solvers, scopes, Stateflow, code generation, buses, triggers, masks, libraries, simulation modes, optimization, etc. -->
+  <div class="question" data-answer="D">
+    <p>Q9. Which configuration parameter sets the fixed-step size for discrete simulations?</p>
+    <label><input type="radio" name="q9" value="A"> Stop time</label><br>
+    <label><input type="radio" name="q9" value="B"> Start time</label><br>
+    <label><input type="radio" name="q9" value="C"> Relative tolerance</label><br>
+    <label><input type="radio" name="q9" value="D"> Fixed-step size (fundamental sample time)</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q10. Which block outputs 1 if first input &gt;= threshold else 0?</p>
+    <label><input type="radio" name="q10" value="A"> Compare To Constant</label><br>
+    <label><input type="radio" name="q10" value="B"> Logical Operator</label><br>
+    <label><input type="radio" name="q10" value="C"> Switch</label><br>
+    <label><input type="radio" name="q10" value="D"> Relay</label><br>
+  </div>
 
   <div class="question" data-answer="C">
+    <p>Q11. Which block selects one of its data inputs based on a control signal?</p>
+    <label><input type="radio" name="q11" value="A"> Multiport Switch</label><br>
+    <label><input type="radio" name="q11" value="B"> Selector</label><br>
+    <label><input type="radio" name="q11" value="C"> Switch</label><br>
+    <label><input type="radio" name="q11" value="D"> Data Type Conversion</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q12. Which diagnostic viewer shows solver errors and warnings during simulation?</p>
+    <label><input type="radio" name="q12" value="A"> Scope</label><br>
+    <label><input type="radio" name="q12" value="B"> Diagnostic Viewer</label><br>
+    <label><input type="radio" name="q12" value="C"> Model Explorer</label><br>
+    <label><input type="radio" name="q12" value="D"> Simulink Profiler</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q13. Which block converts between double and boolean/int types?</p>
+    <label><input type="radio" name="q13" value="A"> Data Type Conversion</label><br>
+    <label><input type="radio" name="q13" value="B"> Reinterpret Cast</label><br>
+    <label><input type="radio" name="q13" value="C"> Convert</label><br>
+    <label><input type="radio" name="q13" value="D"> Bus Selector</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q14. Which block allows algebraic loop breaking by holding previous value?</p>
+    <label><input type="radio" name="q14" value="A"> Gain</label><br>
+    <label><input type="radio" name="q14" value="B"> Saturation</label><br>
+    <label><input type="radio" name="q14" value="C"> Integrator</label><br>
+    <label><input type="radio" name="q14" value="D"> Memory</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q15. A Bus Creator forms what type of signal?</p>
+    <label><input type="radio" name="q15" value="A"> Muxed vector</label><br>
+    <label><input type="radio" name="q15" value="B"> Concatenated matrix</label><br>
+    <label><input type="radio" name="q15" value="C"> Virtual bus</label><br>
+    <label><input type="radio" name="q15" value="D"> Frame-based signal</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q16. Which workflow turns a model into C/C++ code?</p>
+    <label><input type="radio" name="q16" value="A"> HDL Coder</label><br>
+    <label><input type="radio" name="q16" value="B"> Simulink Coder</label><br>
+    <label><input type="radio" name="q16" value="C"> SimEvents</label><br>
+    <label><input type="radio" name="q16" value="D"> Simscape</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q17. Which block converts a boolean to double precision?</p>
+    <label><input type="radio" name="q17" value="A"> Data Type Conversion</label><br>
+    <label><input type="radio" name="q17" value="B"> Cast</label><br>
+    <label><input type="radio" name="q17" value="C"> Numeric Converter</label><br>
+    <label><input type="radio" name="q17" value="D"> Signal Specification</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q18. Which mode executes model blocks as generated, optimized code inside MATLAB?</p>
+    <label><input type="radio" name="q18" value="A"> Normal mode</label><br>
+    <label><input type="radio" name="q18" value="B"> Accelerator (classic)</label><br>
+    <label><input type="radio" name="q18" value="C"> External mode</label><br>
+    <label><input type="radio" name="q18" value="D"> Accelerator mode</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q19. What does the Rate Transition block ensure?</p>
+    <label><input type="radio" name="q19" value="A"> Discrete-to-continuous conversion</label><br>
+    <label><input type="radio" name="q19" value="B"> Safe data transfer between different rates</label><br>
+    <label><input type="radio" name="q19" value="C"> Event-based switching</label><br>
+    <label><input type="radio" name="q19" value="D"> Fixed-step solver selection</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q20. Which block outputs the current simulation time?</p>
+    <label><input type="radio" name="q20" value="A"> Clock (DSP)</label><br>
+    <label><input type="radio" name="q20" value="B"> Counter</label><br>
+    <label><input type="radio" name="q20" value="C"> Clock</label><br>
+    <label><input type="radio" name="q20" value="D"> Constant</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q21. Which library contains Sum, Product, Gain, and Math Function?</p>
+    <label><input type="radio" name="q21" value="A"> Math Operations</label><br>
+    <label><input type="radio" name="q21" value="B"> Signal Routing</label><br>
+    <label><input type="radio" name="q21" value="C"> Sinks</label><br>
+    <label><input type="radio" name="q21" value="D"> Sources</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q22. Which block holds output at previous value when input is NaN?</p>
+    <label><input type="radio" name="q22" value="A"> Saturation</label><br>
+    <label><input type="radio" name="q22" value="B"> Switch</label><br>
+    <label><input type="radio" name="q22" value="C"> Transfer Fcn</label><br>
+    <label><input type="radio" name="q22" value="D"> Hold (Memory)</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q23. Which solver type is recommended for real-time code generation?</p>
+    <label><input type="radio" name="q23" value="A"> Variable-step</label><br>
+    <label><input type="radio" name="q23" value="B"> Fixed-step</label><br>
+    <label><input type="radio" name="q23" value="C"> Adaptive</label><br>
+    <label><input type="radio" name="q23" value="D"> Spectral</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q24. Which block computes y = K * u?</p>
+    <label><input type="radio" name="q24" value="A"> Product</label><br>
+    <label><input type="radio" name="q24" value="B"> Sum</label><br>
+    <label><input type="radio" name="q24" value="C"> Gain</label><br>
+    <label><input type="radio" name="q24" value="D"> Bias</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q25. Which Simulink feature organizes parameters and signals hierarchically?</p>
+    <label><input type="radio" name="q25" value="A"> Model Explorer</label><br>
+    <label><input type="radio" name="q25" value="B"> Diagnostic Viewer</label><br>
+    <label><input type="radio" name="q25" value="C"> Profiler</label><br>
+    <label><input type="radio" name="q25" value="D"> Dashboard</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q26. Which block implements a first-order transfer function using 1/(τs+1)?</p>
+    <label><input type="radio" name="q26" value="A"> State-Space</label><br>
+    <label><input type="radio" name="q26" value="B"> Zero-Pole</label><br>
+    <label><input type="radio" name="q26" value="C"> Discrete Filter</label><br>
+    <label><input type="radio" name="q26" value="D"> Transfer Fcn</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q27. Which block detects when a signal crosses a specified threshold?</p>
+    <label><input type="radio" name="q27" value="A"> Hit Crossing</label><br>
+    <label><input type="radio" name="q27" value="B"> Compare To Constant</label><br>
+    <label><input type="radio" name="q27" value="C"> Relay</label><br>
+    <label><input type="radio" name="q27" value="D"> Switch</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q28. Which block writes data to MATLAB workspace during simulation?</p>
+    <label><input type="radio" name="q28" value="A"> To File</label><br>
+    <label><input type="radio" name="q28" value="B"> To Workspace</label><br>
+    <label><input type="radio" name="q28" value="C"> From Workspace</label><br>
+    <label><input type="radio" name="q28" value="D"> Display</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q29. Stateflow primarily models what type of logic?</p>
+    <label><input type="radio" name="q29" value="A"> Continuous dynamics</label><br>
+    <label><input type="radio" name="q29" value="B"> Frequency-domain filters</label><br>
+    <label><input type="radio" name="q29" value="C"> Event-driven state machines</label><br>
+    <label><input type="radio" name="q29" value="D"> Bus routing</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q30. Which block combines signals of the same data type into a vector?</p>
+    <label><input type="radio" name="q30" value="A"> Bus Creator</label><br>
+    <label><input type="radio" name="q30" value="B"> Concatenate</label><br>
+    <label><input type="radio" name="q30" value="C"> Demux</label><br>
+    <label><input type="radio" name="q30" value="D"> Mux</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q31. Which block limits the rate of change of a signal?</p>
+    <label><input type="radio" name="q31" value="A"> Rate Limiter</label><br>
+    <label><input type="radio" name="q31" value="B"> Transport Delay</label><br>
+    <label><input type="radio" name="q31" value="C"> Saturation</label><br>
+    <label><input type="radio" name="q31" value="D"> Dead Zone</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q32. Which feature helps profile execution time of model components?</p>
+    <label><input type="radio" name="q32" value="A"> Model Advisor</label><br>
+    <label><input type="radio" name="q32" value="B"> Simulink Profiler</label><br>
+    <label><input type="radio" name="q32" value="C"> Signal Logging</label><br>
+    <label><input type="radio" name="q32" value="D"> Data Inspector</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q33. Which signal type can carry different data types under named elements?</p>
+    <label><input type="radio" name="q33" value="A"> Mux signal</label><br>
+    <label><input type="radio" name="q33" value="B"> Vector signal</label><br>
+    <label><input type="radio" name="q33" value="C"> Nonvirtual bus</label><br>
+    <label><input type="radio" name="q33" value="D"> Frame-based</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q34. Which block outputs a repeating sequence of specified values over time?</p>
+    <label><input type="radio" name="q34" value="A"> Signal Builder</label><br>
+    <label><input type="radio" name="q34" value="B"> Step</label><br>
+    <label><input type="radio" name="q34" value="C"> Pulse Generator</label><br>
+    <label><input type="radio" name="q34" value="D"> Repeating Sequence</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q35. Which block is used for time delay in continuous systems?</p>
+    <label><input type="radio" name="q35" value="A"> Transport Delay</label><br>
+    <label><input type="radio" name="q35" value="B"> Unit Delay</label><br>
+    <label><input type="radio" name="q35" value="C"> Memory</label><br>
+    <label><input type="radio" name="q35" value="D"> Outport</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q36. Which modeling style supports fixed-size and variable-size signals with metadata?</p>
+    <label><input type="radio" name="q36" value="A"> Mux/ Demux</label><br>
+    <label><input type="radio" name="q36" value="B"> Bus signals</label><br>
+    <label><input type="radio" name="q36" value="C"> Matrix concatenation</label><br>
+    <label><input type="radio" name="q36" value="D"> Frames</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q37. Which block builds a signal from piecewise linear points?</p>
+    <label><input type="radio" name="q37" value="A"> Pulse Generator</label><br>
+    <label><input type="radio" name="q37" value="B"> Sine Wave</label><br>
+    <label><input type="radio" name="q37" value="C"> Signal Builder / Signal Editor</label><br>
+    <label><input type="radio" name="q37" value="D"> Ramp</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q38. Which Simulink tool checks model for configuration and modeling best practices?</p>
+    <label><input type="radio" name="q38" value="A"> Model Advisor</label><br>
+    <label><input type="radio" name="q38" value="B"> Profiler</label><br>
+    <label><input type="radio" name="q38" value="C"> Diagnostic Viewer</label><br>
+    <label><input type="radio" name="q38" value="D"> Signal Inspector</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q39. Which block converts between sample times without aliasing (when configured)?</p>
+    <label><input type="radio" name="q39" value="A"> Zero-Order Hold</label><br>
+    <label><input type="radio" name="q39" value="B"> Unit Delay</label><br>
+    <label><input type="radio" name="q39" value="C"> Transport Delay</label><br>
+    <label><input type="radio" name="q39" value="D"> Rate Transition</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q40. Which view helps you manage bus elements, signals, and parameters across the model?</p>
+    <label><input type="radio" name="q40" value="A"> Library Browser</label><br>
+    <label><input type="radio" name="q40" value="B"> Model Explorer</label><br>
+    <label><input type="radio" name="q40" value="C"> Variant Manager</label><br>
+    <label><input type="radio" name="q40" value="D"> Data Inspector</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q41. A ZOH block is typically used when interfacing which kinds of systems?</p>
+    <label><input type="radio" name="q41" value="A"> Continuous-to-continuous</label><br>
+    <label><input type="radio" name="q41" value="B"> Discrete-to-discrete</label><br>
+    <label><input type="radio" name="q41" value="C"> Continuous-to-discrete</label><br>
+    <label><input type="radio" name="q41" value="D"> Event-to-continuous</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q42. Which block outputs an index-based selection from a vector or matrix input?</p>
+    <label><input type="radio" name="q42" value="A"> Selector</label><br>
+    <label><input type="radio" name="q42" value="B"> Demux</label><br>
+    <label><input type="radio" name="q42" value="C"> Bus Selector</label><br>
+    <label><input type="radio" name="q42" value="D"> Multiport Switch</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q43. Which setting controls whether signals are stored for post-run inspection?</p>
+    <label><input type="radio" name="q43" value="A"> Stop time</label><br>
+    <label><input type="radio" name="q43" value="B"> Start time</label><br>
+    <label><input type="radio" name="q43" value="C"> Fixed-step size</label><br>
+    <label><input type="radio" name="q43" value="D"> Data logging (Signal logging)</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q44. Which block outputs random numbers with a normal distribution?</p>
+    <label><input type="radio" name="q44" value="A"> Uniform Random Number</label><br>
+    <label><input type="radio" name="q44" value="B"> Random Number</label><br>
+    <label><input type="radio" name="q44" value="C"> Band-Limited White Noise</label><br>
+    <label><input type="radio" name="q44" value="D"> Noise Generator</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q45. Which block sets output to upper/lower limits with hysteresis?</p>
+    <label><input type="radio" name="q45" value="A"> Saturation</label><br>
+    <label><input type="radio" name="q45" value="B"> Switch</label><br>
+    <label><input type="radio" name="q45" value="C"> Relay</label><br>
+    <label><input type="radio" name="q45" value="D"> Dead Zone</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q46. Which block can implement y = u + bias?</p>
+    <label><input type="radio" name="q46" value="A"> Bias</label><br>
+    <label><input type="radio" name="q46" value="B"> Sum</label><br>
+    <label><input type="radio" name="q46" value="C"> Gain</label><br>
+    <label><input type="radio" name="q46" value="D"> Abs</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q47. Which feature lets you vary parameters across runs for design exploration?</p>
+    <label><input type="radio" name="q47" value="A"> Model Advisor</label><br>
+    <label><input type="radio" name="q47" value="B"> Profiler</label><br>
+    <label><input type="radio" name="q47" value="C"> Data Inspector</label><br>
+    <label><input type="radio" name="q47" value="D"> Simulink Design Optimization / Parameter Sweep</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q48. Which block changes data type without altering underlying bits?</p>
+    <label><input type="radio" name="q48" value="A"> Data Type Conversion</label><br>
+    <label><input type="radio" name="q48" value="B"> Reinterpret Cast</label><br>
+    <label><input type="radio" name="q48" value="C"> MATLAB Function</label><br>
+    <label><input type="radio" name="q48" value="D"> Convert</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q49. Which solver control sets allowable error per integration step?</p>
+    <label><input type="radio" name="q49" value="A"> Maximum step size</label><br>
+    <label><input type="radio" name="q49" value="B"> Stop time</label><br>
+    <label><input type="radio" name="q49" value="C"> Relative tolerance</label><br>
+    <label><input type="radio" name="q49" value="D"> Min step size</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q50. Which block triggers output when input enters a specified range?</p>
+    <label><input type="radio" name="q50" value="A"> Inport with Trigger / Triggered Subsystem</label><br>
+    <label><input type="radio" name="q50" value="B"> Compare To Constant</label><br>
+    <label><input type="radio" name="q50" value="C"> Relay</label><br>
+    <label><input type="radio" name="q50" value="D"> Switch</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q51. Which block measures elapsed time between events?</p>
+    <label><input type="radio" name="q51" value="A"> Clock</label><br>
+    <label><input type="radio" name="q51" value="B"> Counter</label><br>
+    <label><input type="radio" name="q51" value="C"> Transport Delay</label><br>
+    <label><input type="radio" name="q51" value="D"> Timer / Stopwatch (Elapsed Time)</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q52. Which Simulink feature lets you swap between different component variants?</p>
+    <label><input type="radio" name="q52" value="A"> Libraries</label><br>
+    <label><input type="radio" name="q52" value="B"> Variant Subsystem</label><br>
+    <label><input type="radio" name="q52" value="C"> Model Reference</label><br>
+    <label><input type="radio" name="q52" value="D"> Bus Creator</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q53. Model Reference primarily helps with what?</p>
+    <label><input type="radio" name="q53" value="A"> Random number generation</label><br>
+    <label><input type="radio" name="q53" value="B"> Signal logging</label><br>
+    <label><input type="radio" name="q53" value="C"> Componentization and reuse</label><br>
+    <label><input type="radio" name="q53" value="D"> Data type conversion</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q54. Which block compares two signals with tolerance to output true/false?</p>
+    <label><input type="radio" name="q54" value="A"> Compare To Constant (or Compare To Zero)</label><br>
+    <label><input type="radio" name="q54" value="B"> Relational Operator</label><br>
+    <label><input type="radio" name="q54" value="C"> Logical Operator</label><br>
+    <label><input type="radio" name="q54" value="D"> Switch</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q55. Which block converts matrix rows/cols order or orientation?</p>
+    <label><input type="radio" name="q55" value="A"> Concatenate</label><br>
+    <label><input type="radio" name="q55" value="B"> Mux</label><br>
+    <label><input type="radio" name="q55" value="C"> Gain</label><br>
+    <label><input type="radio" name="q55" value="D"> Matrix Transpose</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q56. Which feature visualizes time-series data from multiple runs?</p>
+    <label><input type="radio" name="q56" value="A"> Scope</label><br>
+    <label><input type="radio" name="q56" value="B"> Simulink Data Inspector</label><br>
+    <label><input type="radio" name="q56" value="C"> Display</label><br>
+    <label><input type="radio" name="q56" value="D"> Dashboard</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q57. Which block holds input and outputs at next time step when enabled?</p>
+    <label><input type="radio" name="q57" value="A"> Enable</label><br>
+    <label><input type="radio" name="q57" value="B"> Trigger</label><br>
+    <label><input type="radio" name="q57" value="C"> Enabled Subsystem</label><br>
+    <label><input type="radio" name="q57" value="D"> Switch</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q58. Which block outputs integer quotient and remainder?</p>
+    <label><input type="radio" name="q58" value="A"> Quotient & Remainder (Math Function)</label><br>
+    <label><input type="radio" name="q58" value="B"> Product</label><br>
+    <label><input type="radio" name="q58" value="C"> Sum</label><br>
+    <label><input type="radio" name="q58" value="D"> Saturation</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q59. Which solver is implicit and suitable for stiff models?</p>
+    <label><input type="radio" name="q59" value="A"> ode45</label><br>
+    <label><input type="radio" name="q59" value="B"> ode23</label><br>
+    <label><input type="radio" name="q59" value="C"> ode113</label><br>
+    <label><input type="radio" name="q59" value="D"> ode15s</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q60. Which block replaces NaNs/Infs with defined values?</p>
+    <label><input type="radio" name="q60" value="A"> Saturation</label><br>
+    <label><input type="radio" name="q60" value="B"> Data Type Conversion (or Data Cleaning block)</label><br>
+    <label><input type="radio" name="q60" value="C"> Gain</label><br>
+    <label><input type="radio" name="q60" value="D"> Scope</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q61. Which block extracts selected elements from a bus?</p>
+    <label><input type="radio" name="q61" value="A"> Selector</label><br>
+    <label><input type="radio" name="q61" value="B"> Demux</label><br>
+    <label><input type="radio" name="q61" value="C"> Bus Selector</label><br>
+    <label><input type="radio" name="q61" value="D"> Mux</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q62. Which block integrates only when an external enable is true?</p>
+    <label><input type="radio" name="q62" value="A"> Enabled Integrator</label><br>
+    <label><input type="radio" name="q62" value="B"> Integrator</label><br>
+    <label><input type="radio" name="q62" value="C"> Discrete-Time Integrator</label><br>
+    <label><input type="radio" name="q62" value="D"> Memory</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q63. What does the Dead Zone block do?</p>
+    <label><input type="radio" name="q63" value="A"> Adds hysteresis</label><br>
+    <label><input type="radio" name="q63" value="B"> Limits rate</label><br>
+    <label><input type="radio" name="q63" value="C"> Delays signal</label><br>
+    <label><input type="radio" name="q63" value="D"> Outputs zero within a range</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q64. Which block computes polynomial transfer functions in z-domain?</p>
+    <label><input type="radio" name="q64" value="A"> Transfer Fcn</label><br>
+    <label><input type="radio" name="q64" value="B"> Discrete Transfer Fcn</label><br>
+    <label><input type="radio" name="q64" value="C"> Zero-Pole</label><br>
+    <label><input type="radio" name="q64" value="D"> State-Space</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q65. Which block measures frequency and amplitude of a sinusoid?</p>
+    <label><input type="radio" name="q65" value="A"> Pulse Generator</label><br>
+    <label><input type="radio" name="q65" value="B"> Scope</label><br>
+    <label><input type="radio" name="q65" value="C"> Measurement (Sine Measurement/FFT blocks)</label><br>
+    <label><input type="radio" name="q65" value="D"> Bias</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q66. Which block allows adding measurement noise to a signal?</p>
+    <label><input type="radio" name="q66" value="A"> Band-Limited White Noise</label><br>
+    <label><input type="radio" name="q66" value="B"> Random Number</label><br>
+    <label><input type="radio" name="q66" value="C"> Uniform Random Number</label><br>
+    <label><input type="radio" name="q66" value="D"> Signal Builder</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q67. What does the Saturation Dynamic block do?</p>
+    <label><input type="radio" name="q67" value="A"> Same as Saturation</label><br>
+    <label><input type="radio" name="q67" value="B"> Filters noise</label><br>
+    <label><input type="radio" name="q67" value="C"> Generates thresholds</label><br>
+    <label><input type="radio" name="q67" value="D"> Uses input ports for limits</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q68. Which solver variable allows automatic step size control?</p>
+    <label><input type="radio" name="q68" value="A"> Fixed-step size</label><br>
+    <label><input type="radio" name="q68" value="B"> Variable-step</label><br>
+    <label><input type="radio" name="q68" value="C"> Frame-based</label><br>
+    <label><input type="radio" name="q68" value="D"> Discrete step</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q69. Which block triggers on rising/falling edges of a boolean signal?</p>
+    <label><input type="radio" name="q69" value="A"> Enable</label><br>
+    <label><input type="radio" name="q69" value="B"> Switch</label><br>
+    <label><input type="radio" name="q69" value="C"> Triggered Subsystem</label><br>
+    <label><input type="radio" name="q69" value="D"> Stateflow</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q70. Which block converts enumerated types to integer values?</p>
+    <label><input type="radio" name="q70" value="A"> Data Type Conversion</label><br>
+    <label><input type="radio" name="q70" value="B"> Reinterpret Cast</label><br>
+    <label><input type="radio" name="q70" value="C"> MATLAB Function</label><br>
+    <label><input type="radio" name="q70" value="D"> Selector</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q71. Which feature ensures consistent signal attributes across model interfaces?</p>
+    <label><input type="radio" name="q71" value="A"> Dashboard</label><br>
+    <label><input type="radio" name="q71" value="B"> Profiler</label><br>
+    <label><input type="radio" name="q71" value="C"> Scope</label><br>
+    <label><input type="radio" name="q71" value="D"> Signal Specification</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q72. Which block performs lookup using breakpoints to approximate nonlinearities?</p>
+    <label><input type="radio" name="q72" value="A"> Gain</label><br>
+    <label><input type="radio" name="q72" value="B"> 1-D Lookup Table</label><br>
+    <label><input type="radio" name="q72" value="C"> Transfer Fcn</label><br>
+    <label><input type="radio" name="q72" value="D"> Saturation</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q73. Which approach reduces algebraic loop issues?</p>
+    <label><input type="radio" name="q73" value="A"> Using Gain blocks</label><br>
+    <label><input type="radio" name="q73" value="B"> Decreasing stop time</label><br>
+    <label><input type="radio" name="q73" value="C"> Insert Memory/Unit Delay blocks</label><br>
+    <label><input type="radio" name="q73" value="D"> Enable logging</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q74. Which block concatenates signals along a specified dimension?</p>
+    <label><input type="radio" name="q74" value="A"> Concatenate</label><br>
+    <label><input type="radio" name="q74" value="B"> Mux</label><br>
+    <label><input type="radio" name="q74" value="C"> Bus Creator</label><br>
+    <label><input type="radio" name="q74" value="D"> Demux</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q75. Which block produces a time-limited pulse train?</p>
+    <label><input type="radio" name="q75" value="A"> Step</label><br>
+    <label><input type="radio" name="q75" value="B"> Ramp</label><br>
+    <label><input type="radio" name="q75" value="C"> Sine Wave</label><br>
+    <label><input type="radio" name="q75" value="D"> Pulse Generator</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q76. Which block converts frame-based signals to sample-based?</p>
+    <label><input type="radio" name="q76" value="A"> Rate Transition</label><br>
+    <label><input type="radio" name="q76" value="B"> Unbuffer (DSP System Toolbox)</label><br>
+    <label><input type="radio" name="q76" value="C"> Buffer</label><br>
+    <label><input type="radio" name="q76" value="D"> Zero-Order Hold</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q77. Which block computes logical operations on boolean inputs?</p>
+    <label><input type="radio" name="q77" value="A"> Compare To Zero</label><br>
+    <label><input type="radio" name="q77" value="B"> Relational Operator</label><br>
+    <label><input type="radio" name="q77" value="C"> Logical Operator</label><br>
+    <label><input type="radio" name="q77" value="D"> Switch</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q78. Which block sets output to zero when input is within a ±range?</p>
+    <label><input type="radio" name="q78" value="A"> Dead Zone</label><br>
+    <label><input type="radio" name="q78" value="B"> Saturation</label><br>
+    <label><input type="radio" name="q78" value="C"> Relay</label><br>
+    <label><input type="radio" name="q78" value="D"> Rate Limiter</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q79. Which block converts a vector to a bus?</p>
+    <label><input type="radio" name="q79" value="A"> Mux</label><br>
+    <label><input type="radio" name="q79" value="B"> Demux</label><br>
+    <label><input type="radio" name="q79" value="C"> Concatenate</label><br>
+    <label><input type="radio" name="q79" value="D"> Bus Creator</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q80. Which feature can automatically set signal attributes to match downstream blocks?</p>
+    <label><input type="radio" name="q80" value="A"> Model Advisor</label><br>
+    <label><input type="radio" name="q80" value="B"> Signal Specification / Data type propagation</label><br>
+    <label><input type="radio" name="q80" value="C"> Scope AutoScale</label><br>
+    <label><input type="radio" name="q80" value="D"> Variants</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q81. Which block builds arrays by repeating and tiling inputs?</p>
+    <label><input type="radio" name="q81" value="A"> Selector</label><br>
+    <label><input type="radio" name="q81" value="B"> Concatenate</label><br>
+    <label><input type="radio" name="q81" value="C"> Repeat / Tile (Matrix Concatenate/Reshape)</label><br>
+    <label><input type="radio" name="q81" value="D"> Gain</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q82. Which block outputs y = abs(u)?</p>
+    <label><input type="radio" name="q82" value="A"> Abs</label><br>
+    <label><input type="radio" name="q82" value="B"> Math Function (sqrt)</label><br>
+    <label><input type="radio" name="q82" value="C"> Bias</label><br>
+    <label><input type="radio" name="q82" value="D"> Gain</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q83. Which block computes u modulo m?</p>
+    <label><input type="radio" name="q83" value="A"> Product</label><br>
+    <label><input type="radio" name="q83" value="B"> Sum</label><br>
+    <label><input type="radio" name="q83" value="C"> Gain</label><br>
+    <label><input type="radio" name="q83" value="D"> Math Function (mod)</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q84. Which setting controls sample time inheritance for a block?</p>
+    <label><input type="radio" name="q84" value="A"> Stop time</label><br>
+    <label><input type="radio" name="q84" value="B"> Sample time parameter</label><br>
+    <label><input type="radio" name="q84" value="C"> Data logging</label><br>
+    <label><input type="radio" name="q84" value="D"> Max step size</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q85. Which block forms a subsystem that runs as generated code in a separate process for HIL?</p>
+    <label><input type="radio" name="q85" value="A"> Enabled Subsystem</label><br>
+    <label><input type="radio" name="q85" value="B"> Triggered Subsystem</label><br>
+    <label><input type="radio" name="q85" value="C"> External Mode / Rapid Accelerator (concept)</label><<div class="question" data-answer="C">
     <p>Q99. Which Simulink feature allows modeling of event-driven systems?</p>
     <label><input type="radio" name="q99" value="A"> Simscape</label><br>
     <label><input type="radio" name="q99" value="B"> Simulink Coder</label><br>
@@ -114,35 +740,3 @@
     <label><input type="radio" name="q100" value="D"> MATLAB Function block</label><br>
   </div>
 
-  <div class="controls">
-    <button onclick="checkAnswers()">Check Score</button>
-    <button onclick="resetQuiz()">Reset</button>
-    <p id="score"></p>
-  </div>
-
-  <script>
-    function checkAnswers() {
-        let total = 0, correct = 0;
-        document.querySelectorAll(".question").forEach((q, idx) => {
-            total++;
-            let selected = q.querySelector("input[type=radio]:checked");
-            let answer = q.dataset.answer;
-            if (selected && selected.value === answer) {
-                correct++;
-                q.style.border = "2px solid green";
-            } else {
-                q.style.border = "2px solid red";
-            }
-        });
-        document.getElementById("score").innerText = 
-            `You got ${correct} / ${total} correct`;
-    }
-
-    function resetQuiz() {
-        document.querySelectorAll("input[type=radio]").forEach(r => r.checked = false);
-        document.querySelectorAll(".question").forEach(q => q.style.border = "none");
-        document.getElementById("score").innerText = "";
-    }
-  </script>
-</body>
-</html>
