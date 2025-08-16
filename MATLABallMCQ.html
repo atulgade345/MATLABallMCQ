@@ -848,4 +848,37 @@
     <label><input type="radio" name="q100" value="D"> Scope</label><br>
   </div>
 
+   <div class="controls">
+    <button onclick="checkAnswers()">Check Score</button>
+    <button onclick="resetQuiz()">Reset</button>
+    <p id="score"></p>
+  </div>
+
+  <script>
+    function checkAnswers() {
+        let total = 0, correct = 0;
+        document.querySelectorAll(".question").forEach((q, idx) => {
+            total++;
+            let selected = q.querySelector("input[type=radio]:checked");
+            let answer = q.dataset.answer;
+            if (selected && selected.value === answer) {
+                correct++;
+                q.style.border = "2px solid green";
+            } else {
+                q.style.border = "2px solid red";
+            }
+        });
+        document.getElementById("score").innerText = 
+            `You got ${correct} / ${total} correct`;
+    }
+
+    function resetQuiz() {
+        document.querySelectorAll("input[type=radio]").forEach(r => r.checked = false);
+        document.querySelectorAll(".question").forEach(q => q.style.border = "none");
+        document.getElementById("score").innerText = "";
+    }
+  </script>
+</body>
+</html>
+
 
