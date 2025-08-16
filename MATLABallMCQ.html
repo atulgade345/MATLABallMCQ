@@ -720,23 +720,132 @@
     <label><input type="radio" name="q84" value="D"> Max step size</label><br>
   </div>
 
-  <div class="question" data-answer="C">
-    <p>Q85. Which block forms a subsystem that runs as generated code in a separate process for HIL?</p>
-    <label><input type="radio" name="q85" value="A"> Enabled Subsystem</label><br>
-    <label><input type="radio" name="q85" value="B"> Triggered Subsystem</label><br>
-    <label><input type="radio" name="q85" value="C"> External Mode / Rapid Accelerator (concept)</label><<div class="question" data-answer="C">
-    <p>Q99. Which Simulink feature allows modeling of event-driven systems?</p>
-    <label><input type="radio" name="q99" value="A"> Simscape</label><br>
-    <label><input type="radio" name="q99" value="B"> Simulink Coder</label><br>
-    <label><input type="radio" name="q99" value="C"> Stateflow</label><br>
-    <label><input type="radio" name="q99" value="D"> Signal Builder</label><br>
+    <div class="question" data-answer="C">
+    <p>Q85. Which execution mode allows code to run on target hardware with parameter tuning (commonly used for HIL)?</p>
+    <label><input type="radio" name="q85" value="A"> Normal</label><br>
+    <label><input type="radio" name="q85" value="B"> Accelerator</label><br>
+    <label><input type="radio" name="q85" value="C"> External mode</label><br>
+    <label><input type="radio" name="q85" value="D"> Rapid Accelerator</label><br>
   </div>
 
   <div class="question" data-answer="D">
-    <p>Q100. In Simulink, which feature allows integration with MATLAB scripts?</p>
-    <label><input type="radio" name="q100" value="A"> Stateflow</label><br>
-    <label><input type="radio" name="q100" value="B"> Simscape</label><br>
-    <label><input type="radio" name="q100" value="C"> HDL Coder</label><br>
-    <label><input type="radio" name="q100" value="D"> MATLAB Function block</label><br>
+    <p>Q86. Which block implements a state-space model defined by matrices A, B, C, D?</p>
+    <label><input type="radio" name="q86" value="A"> Transfer Fcn</label><br>
+    <label><input type="radio" name="q86" value="B"> Zero-Pole</label><br>
+    <label><input type="radio" name="q86" value="C"> Discrete Transfer Fcn</label><br>
+    <label><input type="radio" name="q86" value="D"> State-Space</label><br>
   </div>
+
+  <div class="question" data-answer="C">
+    <p>Q87. Which block integrates a discrete-time signal with optional saturation and external reset?</p>
+    <label><input type="radio" name="q87" value="A"> Integrator</label><br>
+    <label><input type="radio" name="q87" value="B"> Memory</label><br>
+    <label><input type="radio" name="q87" value="C"> Discrete-Time Integrator</label><br>
+    <label><input type="radio" name="q87" value="D"> Unit Delay</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q88. Which Simulink feature helps create, manage, and activate conditional design alternatives (variants)?</p>
+    <label><input type="radio" name="q88" value="A"> Model Explorer</label><br>
+    <label><input type="radio" name="q88" value="B"> Variant Manager</label><br>
+    <label><input type="radio" name="q88" value="C"> Data Inspector</label><br>
+    <label><input type="radio" name="q88" value="D"> Dashboard</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q89. Which solver choice is appropriate for models with only discrete states?</p>
+    <label><input type="radio" name="q89" value="A"> ode45</label><br>
+    <label><input type="radio" name="q89" value="B"> ode15s</label><br>
+    <label><input type="radio" name="q89" value="C"> Fixed-step, discrete (no continuous states)</label><br>
+    <label><input type="radio" name="q89" value="D"> ode113</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q90. Which block delays a signal by an arbitrary integer number of samples N?</p>
+    <label><input type="radio" name="q90" value="A"> Transport Delay</label><br>
+    <label><input type="radio" name="q90" value="B"> Unit Delay</label><br>
+    <label><input type="radio" name="q90" value="C"> Discrete Delay</label><br>
+    <label><input type="radio" name="q90" value="D"> Memory</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q91. Which capability lets you mark signals on lines for logging to the run results?</p>
+    <label><input type="radio" name="q91" value="A"> Scope autoscale</label><br>
+    <label><input type="radio" name="q91" value="B"> Profiler</label><br>
+    <label><input type="radio" name="q91" value="C"> Model Advisor</label><br>
+    <label><input type="radio" name="q91" value="D"> Signal logging (Log Selected Signals)</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q92. Which source block imports time-based data from the MATLAB workspace?</p>
+    <label><input type="radio" name="q92" value="A"> From File</label><br>
+    <label><input type="radio" name="q92" value="B"> From Workspace</label><br>
+    <label><input type="radio" name="q92" value="C"> Signal Builder</label><br>
+    <label><input type="radio" name="q92" value="D"> Constant</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q93. Which block lets you implement custom algorithms using MATLAB code within a model?</p>
+    <label><input type="radio" name="q93" value="A"> S-Function Builder</label><br>
+    <label><input type="radio" name="q93" value="B"> Subsystem</label><br>
+    <label><input type="radio" name="q93" value="C"> Gain</label><br>
+    <label><input type="radio" name="q93" value="D"> MATLAB Function</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q94. Which block converts a continuous signal to a discrete one by holding values between samples?</p>
+    <label><input type="radio" name="q94" value="A"> Zero-Order Hold</label><br>
+    <label><input type="radio" name="q94" value="B"> Transport Delay</label><br>
+    <label><input type="radio" name="q94" value="C"> Rate Transition</label><br>
+    <label><input type="radio" name="q94" value="D"> Saturation</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q95. Which product is used to model physical systems using acausal components and networks?</p>
+    <label><input type="radio" name="q95" value="A"> Stateflow</label><br>
+    <label><input type="radio" name="q95" value="B"> Simulink Coder</label><br>
+    <label><input type="radio" name="q95" value="C"> Simscape</label><br>
+    <label><input type="radio" name="q95" value="D"> HDL Coder</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q96. Which block performs table-based interpolation with two independent inputs?</p>
+    <label><input type="radio" name="q96" value="A"> 1-D Lookup Table</label><br>
+    <label><input type="radio" name="q96" value="B"> 2-D Lookup Table</label><br>
+    <label><input type="radio" name="q96" value="C"> Gain</label><br>
+    <label><input type="radio" name="q96" value="D"> Selector</label><br>
+  </div>
+
+  <div class="question" data-answer="D">
+    <p>Q97. Which block sets output to zero within limits that are provided via input ports?</p>
+    <label><input type="radio" name="q97" value="A"> Saturation</label><br>
+    <label><input type="radio" name="q97" value="B"> Relay</label><br>
+    <label><input type="radio" name="q97" value="C"> Rate Limiter</label><br>
+    <label><input type="radio" name="q97" value="D"> Dead Zone Dynamic</label><br>
+  </div>
+
+  <div class="question" data-answer="A">
+    <p>Q98. Which artifact stores parameters, signals, and bus type definitions in a managed file rather than base workspace?</p>
+    <label><input type="radio" name="q98" value="A"> Simulink Data Dictionary (.sldd)</label><br>
+    <label><input type="radio" name="q98" value="B"> Diagnostic Viewer</label><br>
+    <label><input type="radio" name="q98" value="C"> Command Window</label><br>
+    <label><input type="radio" name="q98" value="D"> Library Browser</label><br>
+  </div>
+
+  <div class="question" data-answer="C">
+    <p>Q99. In Simulink, which mode generates standalone C code from a model?</p>
+    <label><input type="radio" name="q99" value="A"> Accelerator</label><br>
+    <label><input type="radio" name="q99" value="B"> Normal</label><br>
+    <label><input type="radio" name="q99" value="C"> Simulink Coder</label><br>
+    <label><input type="radio" name="q99" value="D"> Rapid Accelerator</label><br>
+  </div>
+
+  <div class="question" data-answer="B">
+    <p>Q100. Which block allows the implementation of state machines and flow charts within Simulink?</p>
+    <label><input type="radio" name="q100" value="A"> Integrator</label><br>
+    <label><input type="radio" name="q100" value="B"> Stateflow</label><br>
+    <label><input type="radio" name="q100" value="C"> Gain</label><br>
+    <label><input type="radio" name="q100" value="D"> Scope</label><br>
+  </div>
+
 
